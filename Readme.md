@@ -19,7 +19,7 @@ Requires ffmpeg on PATH (winget install ffmpeg / sudo pacman -S ffmpeg)
 
 ## Usage
 
-python subtitle_pipeline.py video.mp4 --to-lang el
+python subtitle_pipeline.py video.mp4 --to-lang el  
 python subtitle_pipeline.py video.mp4 --to-lang el --hardcode
 
 The script auto-detects CUDA and picks a sensible default Whisper model
