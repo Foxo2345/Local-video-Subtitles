@@ -23,7 +23,7 @@ def default_model_for_device(device: str) -> str:
 def transcribe(video_path: Path, model: str, source_lang: str, device: str) -> Path:
     srt_path = video_path.with_suffix(".srt")
     cmd = [
-        "whisper", str(video_path),
+        sys.executable, "-m", "whisper", str(video_path),
         "--model", model,
         "--device", device,
         "-f", "srt",

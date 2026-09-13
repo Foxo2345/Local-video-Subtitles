@@ -19,8 +19,7 @@ pip install openai-whisper argostranslate srt
 
 ## Usage
 
-python subtitle_pipeline.py video.mp4 --to-lang el  
-python subtitle_pipeline.py video.mp4 --to-lang el --hardcode
+python app.py
 
 The script auto-detects CUDA and picks a sensible default Whisper model
 (medium on GPU, small on CPU)
